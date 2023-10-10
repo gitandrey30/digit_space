@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<content>
+    <form method="post" enctype="multipart/form-data">>
+        {% csrf_token %}
+        <p>Vag_car</p>
+        {{ form.as_p }}
+        <button type="submit">post</button>
+    </form>
+
+    {% if img_obj %}
+    <h3>Succesfully : {{img_obj.title}}</h3>
+    <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px">
+{% endif %}
+</content>
+
+
+{% endblock %}

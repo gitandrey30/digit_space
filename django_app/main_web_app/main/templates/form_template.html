@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<content>
+    <ul>
+        {% for data in model_list %}
+        <li>{{ data }}</li>
+        {% endfor %}
+    </ul>
+</content>
+
+
+{% endblock %}

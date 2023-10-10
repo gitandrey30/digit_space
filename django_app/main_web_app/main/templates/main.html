@@ -1,13 +1,24 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'main_app.css' %}">
 </head>
 <body>
 <h1>hello World</h1>
 
+<nav>
+    <ul class="navigation-list">
+        <li><a href="{% url 'main:main_page' %}">Go to Main Page</a></li>
+        <li><a href="{% url 'main:add_new_car' %}">add_new_car</a></li>
+        <li><a href="{% url 'main:form_template' %}">query_model</a></li>
+    </ul>
+</nav>
+
 {% block content %}
+
 {% endblock %}
 
 

@@ -1,0 +1,15 @@
+.navigation-list {
+    background-color : #77fe00;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation-list li {
+    display: inline-block; /* Отображаем элементы в одну строку */
+    margin-right: 10px; /* Расстояние между элементами */
+}
+
+.navigation-list li:last-child {
+    margin-right: 0; /* Убираем правый отступ у последнего элемента */
+}
